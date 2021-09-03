@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="ACCENTURE SERVICES PVT LTD/RafalB" componentId="f1fe0de0-69ba-4dad-96f1-63a6948d5caa" version="3" name="CICD Test Process" type="process" createdDate="2021-08-20T11:02:30Z" createdBy="rafal.bury@accenture.com" modifiedDate="2021-09-03T11:33:19Z" modifiedBy="rafal.bury@accenture.com" deleted="false" currentVersion="true" folderName="RafalB" folderId="Rjo0MjIxOTY1">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="ACCENTURE SERVICES PVT LTD/RafalB" componentId="f1fe0de0-69ba-4dad-96f1-63a6948d5caa" version="4" name="CICD Test Process" type="process" createdDate="2021-08-20T11:02:30Z" createdBy="rafal.bury@accenture.com" modifiedDate="2021-09-03T12:12:38Z" modifiedBy="rafal.bury@accenture.com" deleted="false" currentVersion="true" folderName="RafalB" folderId="Rjo0MjIxOTY1">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
@@ -27,16 +27,16 @@
             </message>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="624.0" y="41.0">
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="640.0" y="121.0">
               <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="515.0" y="47.0"/>
               <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="515.0" y="47.0"/>
-              <linesegment length="62" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="515.0" y="47.0"/>
-              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="577.0" y="47.0"/>
-              <linesegment length="47" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="577.0" y="47.0"/>
+              <linesegment length="70" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="515.0" y="47.0"/>
+              <linesegment length="80" name="shape2.dragpoint1.lineseg4" orient="vertical" x="585.0" y="47.0"/>
+              <linesegment length="55" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="585.0" y="127.0"/>
             </dragpoint>
           </dragpoints>
         </shape>
-        <shape image="stop_icon" name="shape3" shapetype="stop" userlabel="" x="640.0" y="32.0">
+        <shape image="stop_icon" name="shape3" shapetype="stop" userlabel="" x="656.0" y="112.0">
           <configuration>
             <stop continue="true"/>
           </configuration>
@@ -64,6 +64,12 @@
           </dragpoints>
         </shape>
         <shape image="stop_icon" name="shape6" shapetype="stop" userlabel="" x="480.0" y="192.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" userlabel="" x="688.0" y="288.0">
           <configuration>
             <stop continue="true"/>
           </configuration>
