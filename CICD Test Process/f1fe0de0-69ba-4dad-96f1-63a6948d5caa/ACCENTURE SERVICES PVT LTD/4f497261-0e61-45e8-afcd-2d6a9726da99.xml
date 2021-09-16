@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="ACCENTURE SERVICES PVT LTD" componentId="4f497261-0e61-45e8-afcd-2d6a9726da99" version="5" name="New HTTP Client Connector Operation" type="connector-action" subType="http" createdDate="2016-12-06T09:23:30Z" createdBy="srishti.jaiswal@accenture.com" modifiedDate="2016-12-06T09:24:31Z" modifiedBy="srishti.jaiswal@accenture.com" deleted="false" currentVersion="true" folderName="ACCENTURE SERVICES PVT LTD" folderId="RjozNjU0MDQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="application/json" followRedirects="false" methodType="GET" requestProfileType="NONE" responseProfileType="NONE" returnErrors="false">
+          <requestHeaders>
+            <header headerName="Accept" headerValue="application/json" isVariable="true" key="1000000"/>
+            <header headerName="Content-Type" headerValue="application/json; charset=UTF-8" isVariable="true" key="1000001"/>
+          </requestHeaders>
+          <pathElements/>
+          <responseHeaderMapping/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

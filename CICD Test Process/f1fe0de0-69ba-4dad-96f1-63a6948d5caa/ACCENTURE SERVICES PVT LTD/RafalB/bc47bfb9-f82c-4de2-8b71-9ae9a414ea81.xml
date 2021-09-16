@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="ACCENTURE SERVICES PVT LTD/RafalB" componentId="bc47bfb9-f82c-4de2-8b71-9ae9a414ea81" version="1" name="New HTTP Client Connection" type="connector-settings" subType="http" createdDate="2021-09-14T14:42:22Z" createdBy="rafal.bury@accenture.com" modifiedDate="2021-09-14T14:42:22Z" modifiedBy="rafal.bury@accenture.com" deleted="false" currentVersion="true" folderName="RafalB" folderId="Rjo0MjIxOTY1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <HttpSettings xmlns="" authenticationType="NONE" url="https://github.com/rafal566/BoomiTest">
+      <AuthSettings user=""/>
+      <OAuthSettings accessToken="" accessTokenURL="" authorizationURL="" consumerKey="" realm="" requestTokenURL="" signatureMethod="SHA256" suppressBlankAccessToken="false"/>
+      <OAuth2Settings grantType="code">
+        <credentials clientId=""/>
+        <authorizationTokenEndpoint url="">
+          <sslOptions/>
+        </authorizationTokenEndpoint>
+        <authorizationParameters/>
+        <accessTokenEndpoint url="">
+          <sslOptions/>
+        </accessTokenEndpoint>
+        <accessTokenParameters/>
+        <scope/>
+      </OAuth2Settings>
+      <AwsSettings>
+        <credentials>
+          <accessKeyId/>
+          <awsService>s3</awsService>
+          <customService/>
+          <awsRegion>ap-northeast-1</awsRegion>
+          <customRegion/>
+        </credentials>
+      </AwsSettings>
+      <SSLOptions clientauth="false" trustServerCert="false"/>
+    </HttpSettings>
+  </bns:object>
+</bns:Component>

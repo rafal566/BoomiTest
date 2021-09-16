@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="ACCENTURE SERVICES PVT LTD/RafalB" componentId="f1fe0de0-69ba-4dad-96f1-63a6948d5caa" version="8" name="CICD Test Process" type="process" createdDate="2021-08-20T11:02:30Z" createdBy="rafal.bury@accenture.com" modifiedDate="2021-09-16T11:13:01Z" modifiedBy="rafal.bury@accenture.com" deleted="false" currentVersion="true" folderName="RafalB" folderId="Rjo0MjIxOTY1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="96.0" y="96.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="bc47bfb9-f82c-4de2-8b71-9ae9a414ea81" connectorType="http" hideSettings="false" operationId="4f497261-0e61-45e8-afcd-2d6a9726da99" parameter-profile="EMBEDDED|HttpParameterChooser|4f497261-0e61-45e8-afcd-2d6a9726da99">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="272.0" y="105.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="131.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="131.0" y="111.0"/>
+              <linesegment length="78" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="131.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="209.0" y="111.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="209.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape2" shapetype="message" userlabel="" x="480.0" y="32.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Test</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="640.0" y="121.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="515.0" y="47.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="515.0" y="47.0"/>
+              <linesegment length="70" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="515.0" y="47.0"/>
+              <linesegment length="80" name="shape2.dragpoint1.lineseg4" orient="vertical" x="585.0" y="47.0"/>
+              <linesegment length="55" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="585.0" y="127.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape3" shapetype="stop" userlabel="" x="656.0" y="112.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="branch_icon" name="shape4" shapetype="branch" userlabel="" x="288.0" y="96.0">
+          <configuration>
+            <branch numBranches="2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape4.dragpoint1" text="1" toShape="shape2" x="464.0" y="41.0">
+              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="323.0" y="111.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="323.0" y="111.0"/>
+              <linesegment length="78" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="323.0" y="111.0"/>
+              <linesegment length="64" name="shape4.dragpoint1.lineseg4" orient="vertical" x="401.0" y="47.0"/>
+              <linesegment label="1" length="63" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="401.0" y="47.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape4.dragpoint2" text="2" toShape="shape8" x="464.0" y="217.0">
+              <linesegment length="0" name="shape4.dragpoint2.lineseg1" orient="horizontal" x="323.0" y="111.0"/>
+              <linesegment length="0" name="shape4.dragpoint2.lineseg2" orient="vertical" x="323.0" y="111.0"/>
+              <linesegment length="78" name="shape4.dragpoint2.lineseg3" orient="horizontal" x="323.0" y="111.0"/>
+              <linesegment length="112" name="shape4.dragpoint2.lineseg4" orient="vertical" x="401.0" y="111.0"/>
+              <linesegment label="2" length="63" name="shape4.dragpoint2.lineseg5" orient="horizontal" x="401.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="exception_icon" name="shape8" shapetype="exception" userlabel="" x="480.0" y="208.0">
+          <configuration>
+            <exception stopProcessReturnSingleDoc="false" stopsingledoc="false" title="">
+              <exMessage>Value 1</exMessage>
+              <exParameters/>
+            </exception>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="">
+      <Connections>
+        <ConnectionOverride id="bc47bfb9-f82c-4de2-8b71-9ae9a414ea81">
+          <field id="url" label="URL" overrideable="false" xpath="HttpSettings/@url"/>
+          <field id="connectTimeout" label="Connect Timeout" overrideable="false" xpath="HttpSettings/@connectTimeout"/>
+          <field id="readTimeout" label="Read Timeout" overrideable="false" xpath="HttpSettings/@readTimeout"/>
+          <field id="useBasicAuth" label="Use Basic Authentication" overrideable="false" xpath="HttpSettings/@useBasicAuth"/>
+          <field id="user" label="User" overrideable="false" xpath="HttpSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="false" xpath="HttpSettings/AuthSettings/@password"/>
+          <field id="consumerKey" label="OAuth Consumer Key" overrideable="false" xpath="HttpSettings/OAuthSettings/@consumerKey"/>
+          <field id="accessToken" label="OAuth Access Token" overrideable="false" xpath="HttpSettings/OAuthSettings/@accessToken"/>
+          <field id="tokenSecret" label="OAuth Token Secret" overrideable="false" xpath="HttpSettings/OAuthSettings/@tokenSecret"/>
+          <field id="requestTokenURL" label="OAuth Request Token URL" overrideable="false" xpath="HttpSettings/OAuthSettings/@requestTokenURL"/>
+          <field id="authorizationURL" label="OAuth Authorization URL" overrideable="false" xpath="HttpSettings/OAuthSettings/@authorizationURL"/>
+          <field id="accessTokenURL" label="OAuth Access URL" overrideable="false" xpath="HttpSettings/OAuthSettings/@accessTokenURL"/>
+          <field id="consumerSecret" label="OAuth Consumer Secret" overrideable="false" xpath="HttpSettings/OAuthSettings/@consumerSecret"/>
+          <field id="realm" label="OAuth Realm" overrideable="false" xpath="HttpSettings/OAuthSettings/@realm"/>
+          <field id="signatureMethod" label="OAuth Signature Method" overrideable="false" xpath="HttpSettings/OAuthSettings/@signatureMethod"/>
+          <field id="clientauth" label="Use Client Authorization" overrideable="false" xpath="HttpSettings/SSLOptions/@clientauth"/>
+          <field id="clientsslalias" label="Client SSL Certificate" overrideable="false" xpath="HttpSettings/SSLOptions/@clientsslalias"/>
+          <field id="trustServerCert" label="Use Trusted SSL Certificate" overrideable="false" xpath="HttpSettings/SSLOptions/@trustServerCert"/>
+          <field id="trustedcertalias" label="Trust SSL Server Certificate" overrideable="false" xpath="HttpSettings/SSLOptions/@trustedcertalias"/>
+          <field id="clientId" label="OAuth2 Client ID" overrideable="false" xpath="HttpSettings/OAuth2Settings/credentials/@clientId"/>
+          <field id="clientSecret" label="OAuth2 Client Secret" overrideable="false" xpath="HttpSettings/OAuth2Settings/credentials/@clientSecret"/>
+          <field id="authTokenURL2" label="OAuth2 Authorization Token URL" overrideable="false" xpath="HttpSettings/OAuth2Settings/authorizationTokenEndpoint/@url"/>
+          <field id="accessTokenURL2" label="OAuth2 Access Token URL" overrideable="false" xpath="HttpSettings/OAuth2Settings/accessTokenEndpoint/@url"/>
+          <field id="scope" label="OAuth2 Scope" overrideable="false" xpath="HttpSettings/OAuth2Settings/scope"/>
+          <field id="accessToken2" label="OAuth2 Access Token" overrideable="false" xpath="HttpSettings/OAuth2Settings/credentials/@accessToken"/>
+          <field id="accessKeyId" label="Amazon AWS Access Key" overrideable="false" xpath="HttpSettings/AwsSettings/credentials/accessKeyId"/>
+          <field id="awsSecret" label="Amazon AWS Secret Key" overrideable="false" xpath="HttpSettings/AwsSettings/credentials/awsSecret"/>
+          <field id="awsRegion" label="Amazon AWS Region" overrideable="false" xpath="HttpSettings/AwsSettings/credentials/awsRegion"/>
+          <field id="customRegion" label="Custom Region" overrideable="false" xpath="HttpSettings/AwsSettings/credentials/customRegion"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides/>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>
